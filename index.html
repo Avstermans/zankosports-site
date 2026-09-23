@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,'Segoe UI',sans-serif;background:#f7f6f3}img{max-width:100%}[hidden]{display:none!important}</style>
-<meta name="description" content="ZANKO Hybrid 360: full-grain leather, lace-up boxing gloves. Join the waiting list and be first to hear when they are ready.">
+<meta name="description" content="ZANKO Hybrid 360 boxing gloves. Launching soon: leave your email and hear the day they drop.">
 <link rel="canonical" href="https://zankosports.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ZANKO Sports">
-<meta property="og:title" content="ZANKO Early Access">
-<meta property="og:description" content="Hybrid 360: full-grain leather, lace-up boxing gloves. Join the waiting list.">
+<meta property="og:title" content="ZANKO: launching soon">
+<meta property="og:description" content="Hybrid 360 boxing gloves. Leave your email and hear the day they drop.">
 <meta property="og:url" content="https://zankosports.com/">
 <meta property="og:image" content="https://zankosports.com/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#08080A">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='400%20450%20308%20460'%3E%3Crect%20x='400'%20y='450'%20width='308'%20height='460'%20fill='%2308080A'/%3E%3Cg%20transform='matrix%281%2C0%2C0%2C-1%2C0%2C1350%29'%20fill='%23EDEAE4'%3E%3Cpath%20d='M542%20819%20423%20683%20455%20590%20453%20668%20455%20672%20511%20735%20513%20734%20546%20466Z'/%3E%3Cpath%20d='M563%20874%20567%20524%20685%20658V661L653%20754%20655%20672%20597%20607%20596%20608Z'/%3E%3C/g%3E%3C/svg%3E">
-<title>ZANKO Early Access</title>
+<title>ZANKO Launching Soon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -229,8 +229,6 @@
      tap minimum, and the note moves below the button instead of being cut. */
   @media (max-width:480px) and (max-height:820px){
     .hero-media{min-height:min(20svh,150px)}
-    .form-in{display:flex;flex-direction:column}
-    .join-note{order:2;margin-top:1.1rem}
     .opt{padding-block:.55rem;min-height:44px}
   }
   /* the smallest: iPhone SE inside Instagram is 375x559 */
@@ -248,7 +246,7 @@
     <a class="mark" href="#" aria-label="Zanko Sports">
       <img src="img/logo-main.webp" width="1600" height="364" alt="Zanko Sports" fetchpriority="high">
     </a>
-    <span class="chrome-tag lab">Early access</span>
+    <span class="chrome-tag lab">Launching soon</span>
   </div>
 </header>
 
@@ -265,16 +263,13 @@
     <i class="seam" aria-hidden="true"></i>
     <div class="media-copy">
       <p class="media-name">HYBRID 360</p>
-      <p class="media-sub lab">Full-grain &middot; lace-up &middot; 12 &middot; 14 &middot; 16&nbsp;oz</p>
     </div>
   </div>
 
   <div class="hero-form">
     <div class="form-in">
-      <p class="kicker lab">The list, before the gloves</p>
-      <h1 class="join-title">Be first, and tell us what to bring in.</h1>
-      <p class="join-note">The first run is small. What you pick below decides which weights
-      we ship first &mdash; so pick the one you would actually train in.</p>
+      <h1 class="join-title">Launching soon.</h1>
+      <p class="join-note">Leave your email and we will tell you the day it drops.</p>
 
       <form id="form" novalidate>
         <div class="field">
@@ -282,77 +277,27 @@
           <input type="email" id="email" name="email" inputmode="email" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="go" required>
         </div>
 
-        <div class="field">
-          <span class="lab" id="glabel">Which glove</span>
-          <div class="opts" role="group" aria-labelledby="glabel" id="glove">
-            <button class="opt" type="button" data-v="Hybrid 360" aria-pressed="false">Hybrid 360<small>&pound;219 &middot; lace</small></button>
-            <button class="opt" type="button" data-v="Zanko-Fit" aria-pressed="false">Zanko-Fit<small>&pound;89 &middot; velcro</small></button>
-            <button class="opt" type="button" data-v="Both" aria-pressed="false">Both<small>as a pair</small></button>
-          </div>
-        </div>
-
-        <div class="field">
-          <span class="lab" id="wlabel">Which weight</span>
-          <div class="opts" role="group" aria-labelledby="wlabel" id="weight">
-            <button class="opt" type="button" data-v="12oz" aria-pressed="false">12 oz<small>under 60kg</small></button>
-            <button class="opt" type="button" data-v="14oz" aria-pressed="false">14 oz<small>60&ndash;80kg</small></button>
-            <button class="opt" type="button" data-v="16oz" aria-pressed="false">16 oz<small>80kg +</small></button>
-            <button class="opt" type="button" data-v="Not sure" aria-pressed="false">Not sure<small>help me pick</small></button>
-          </div>
-        </div>
-
         <div class="honey" aria-hidden="true">
           <label for="company">Company</label>
           <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
         </div>
 
-        <button class="go" type="submit" id="go">Join the list</button>
+        <button class="go" type="submit" id="go">Notify me</button>
         <p class="say" id="say" role="status" aria-live="polite"></p>
 
-        <p class="fine">No payment taken and nothing to cancel. One email when the list opens,
-        and we will not pass your address to anyone.</p>
+        <p class="fine">One email when we launch. We will not pass your address to anyone.</p>
       </form>
     </div>
   </div>
 
 </section>
 
-<section class="next shell" aria-labelledby="nh">
-  <h2 class="lab" id="nh" style="color:var(--ash);margin:0 0 1.2rem">What happens next</h2>
-  <dl class="steps">
-    <div class="step">
-      <dt>First</dt>
-      <dd>Your place is confirmed right here, the moment you join. No emails after that until there is something to say.</dd>
-    </div>
-    <div class="step">
-      <dt>Then</dt>
-      <dd>We bring in the weights this list asks for, and you hear before the page goes live to anyone else.</dd>
-    </div>
-    <div class="step">
-      <dt>Shipping</dt>
-      <dd>Sent direct from the workshop, tracked, and it takes two to three weeks. We would rather say that now than at checkout.</dd>
-    </div>
-  </dl>
-</section>
 
-<section class="strip shell" aria-labelledby="sh">
-  <h2 class="lab" id="sh" style="color:var(--ash);margin:0 0 1.2rem">Hybrid 360</h2>
-  <div class="strip-grid">
-    <dl class="sp"><dt>Shell</dt><dd>Full-grain cowhide</dd></dl>
-    <dl class="sp"><dt>Padding</dt><dd>Layered IMF over latex</dd></dl>
-    <dl class="sp"><dt>Closure</dt><dd>Lace-up</dd></dl>
-    <dl class="sp"><dt>Thumb</dt><dd>Attached, locked</dd></dl>
-    <dl class="sp"><dt>Lining</dt><dd>Wicking mesh palm</dd></dl>
-    <dl class="sp"><dt>Use</dt><dd>Sparring, bag, pads</dd></dl>
-    <dl class="sp"><dt>Weights</dt><dd>12 / 14 / 16 oz</dd></dl>
-    <dl class="sp"><dt>Price</dt><dd>&pound;219</dd></dl>
-  </div>
-</section>
 
 <div class="shell">
   <footer class="foot lab">
     <img class="foot-logo" src="img/logo-main.webp" width="1600" height="364" alt="Zanko Sports">
-    <span>Early access &mdash; the store is not open yet</span>
+    <span>Launching soon</span>
     <a class="foot-mail" href="mailto:sales@zankosports.com">sales@zankosports.com</a>
   </footer>
 </div>
@@ -380,23 +325,6 @@
   var go    = document.getElementById("go");
   var say   = document.getElementById("say");
 
-  /* the two button groups behave like radios */
-  function group(id) {
-    var el = document.getElementById(id);
-    el.addEventListener("click", function (e) {
-      var b = e.target.closest(".opt");
-      if (!b) return;
-      [].forEach.call(el.querySelectorAll(".opt"), function (o) {
-        o.setAttribute("aria-pressed", o === b ? "true" : "false");
-      });
-    });
-    return function () {
-      var on = el.querySelector('.opt[aria-pressed="true"]');
-      return on ? on.dataset.v : "";
-    };
-  }
-  var glove  = group("glove");
-  var weight = group("weight");
 
   function tell(msg, kind) {
     say.textContent = msg;
@@ -421,10 +349,6 @@
 
     var payload = {
       email: addr,
-      // nothing is pre-selected, so a skipped question is recorded as exactly that --
-      // a default would have counted every skip as Hybrid 360 / 14oz in the forecast
-      glove: glove() || "Not chosen",
-      weight: weight() || "Not chosen",
       source: location.pathname + location.search,
       at: new Date().toISOString()
     };
@@ -445,7 +369,7 @@
       body: JSON.stringify(payload)
     }).then(function () {
       form.querySelectorAll("input,button").forEach(function (n) { n.disabled = true; });
-      tell("You are on the list. We will email " + addr + " first.", "ok");
+      tell("You are in. We will email " + addr + " the day it drops.", "ok");
     }).catch(function () {
       go.disabled = false;
       tell("That did not send. Try again in a moment.", "err");
