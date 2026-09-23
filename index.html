@@ -285,7 +285,7 @@
         <div class="field">
           <span class="lab" id="glabel">Which glove</span>
           <div class="opts" role="group" aria-labelledby="glabel" id="glove">
-            <button class="opt" type="button" data-v="Hybrid 360" aria-pressed="true">Hybrid 360<small>&pound;219 &middot; lace</small></button>
+            <button class="opt" type="button" data-v="Hybrid 360" aria-pressed="false">Hybrid 360<small>&pound;219 &middot; lace</small></button>
             <button class="opt" type="button" data-v="Zanko-Fit" aria-pressed="false">Zanko-Fit<small>&pound;89 &middot; velcro</small></button>
             <button class="opt" type="button" data-v="Both" aria-pressed="false">Both<small>as a pair</small></button>
           </div>
@@ -295,7 +295,7 @@
           <span class="lab" id="wlabel">Which weight</span>
           <div class="opts" role="group" aria-labelledby="wlabel" id="weight">
             <button class="opt" type="button" data-v="12oz" aria-pressed="false">12 oz<small>under 60kg</small></button>
-            <button class="opt" type="button" data-v="14oz" aria-pressed="true">14 oz<small>60&ndash;80kg</small></button>
+            <button class="opt" type="button" data-v="14oz" aria-pressed="false">14 oz<small>60&ndash;80kg</small></button>
             <button class="opt" type="button" data-v="16oz" aria-pressed="false">16 oz<small>80kg +</small></button>
             <button class="opt" type="button" data-v="Not sure" aria-pressed="false">Not sure<small>help me pick</small></button>
           </div>
@@ -421,8 +421,10 @@
 
     var payload = {
       email: addr,
-      glove: glove(),
-      weight: weight(),
+      // nothing is pre-selected, so a skipped question is recorded as exactly that --
+      // a default would have counted every skip as Hybrid 360 / 14oz in the forecast
+      glove: glove() || "Not chosen",
+      weight: weight() || "Not chosen",
       source: location.pathname + location.search,
       at: new Date().toISOString()
     };
